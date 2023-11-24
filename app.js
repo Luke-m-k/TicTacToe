@@ -64,7 +64,7 @@ const Game = (() => {
 
     const restart = () => {
         gameOver = false;
-        message = `${players[0].name} Turn.`
+        message = `${players[0].name}'s Turn.`
         currentPlayerIndex = 0;
 
 
@@ -105,7 +105,7 @@ const Game = (() => {
             }
 
             currentPlayerIndex = currentPlayerIndex === 0 ? 1 : 0;
-            message = `${players[currentPlayerIndex].name} Turn`;
+            message = `${players[currentPlayerIndex].name}'s Turn`;
             messageController.renderMessage(message);
         }
     }
